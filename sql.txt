@@ -1,0 +1,33 @@
+CREATE TABLE user (
+    id int NOT NULL AUTO_INCREMENT,
+    username text not null,
+    usergender text not null,
+    date_created timestamp default current_timestamp,
+    userage text not null,
+    userlocation text not null,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE item(
+  id int not null AUTO_INCREMENT,
+  trackname text null,
+  trackartist int not null,
+  trackgenre text not null,
+  trackalbum  int not null,
+  PRIMARY KEY (id)
+);
+CREATE TABLE albums(
+  id int not null AUTO_INCREMENT,
+  name text not null,
+  genre int not null,
+  trackartist int not null,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE recommendation(
+  predictedrating text null,
+  averagerating text null,
+  trackid int not null,
+  itemreview text null
+);
+

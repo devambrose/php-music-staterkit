@@ -1,0 +1,84 @@
+.body-top{
+  display: grid;
+  grid-template-columns: 10% 10% 10% 40% 10% 10% 10%;
+}
+.tracks{
+  border: 1px solid rebeccapurple;
+  margin: 1% 1.2%;
+}
+.album{
+  display: grid;
+  grid-template-columns: 20% 70%;
+  width: 97%;
+  float: left;
+  box-shadow: 0px 0px 4px #bbb;
+  margin: 1% 0%;
+
+  .cont{
+    display: flex;
+    flex-direction: column;
+    .album-image{
+      height: 160px;
+    }
+  }
+  .details{
+
+    audio{
+      margin-top: auto;
+      width: 100%;
+    }
+  }
+}
+
+.app-flex{
+  display: flex;
+  flex-direction: column;
+}
+#popwindow{
+  position: fixed;
+  display: none;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.65);
+  justify-content: center;
+  place-content: center;
+  place-items: center;
+}
+.no-padding{
+  padding: 0px;
+}
+.app-grid{
+  display: grid;
+
+}
+.main-container{
+  width: 100vw;
+  height: 100vh;
+}
+label{
+  text-align: left;
+}
+.app-center{
+  place-content: center;
+  place-items: center;
+}
+
+.detail{
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  margin:1%;
+  border:1px solid rebeccapurple;
+  padding: 1%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rebeccapurple;
+  div{
+    height: 160px;
+    background-size: cover!important;
+  }
+  p{
+    text-align: center;
+    padding: 1%;
+  }
+}
